@@ -1,0 +1,61 @@
+[
+    {
+        "itemId": "pot4",
+        "itemTitle": "Operatoria de potencias en expresiones algebraicas",
+        "KCs":[{"code":"RNDC", "label":"racionalizacion de numerador/denominador con conjugado"},{"code":"AF1", "label":"amplificacion de fraccion por 1"},
+        {"code":"MF", "label":"multiplicacion de fracciones"},{"code":"ISD", "label":"identificacion de suma por diferencia"}],
+        "level": "1",
+        "text": "Racionalice las siguientes expresiones:",
+        "selectSteps":false,
+        "stepsQuantity":2,
+        "expression": "\\frac{1}{\\sqrt{a}+\\sqrt{b}}",
+        "steps": [
+          {
+            "stepId": "0",
+            "KCs":[{"code":"RNDC", "label":"racionalizacion de numerador/denominador con conjugado"},{"code":"AF1", "label":"amplificacion de fraccion por 1"}],
+            "expression": "\\frac{1}{\\sqrt{a}+\\sqrt{b}}",
+            "stepTitle": "Identifica el conjugado del denominador, luego deja expresado la racionalización del denominador.",
+            "displayResult": ["\\frac{1}{\\sqrt{a}+\\sqrt{b}}\\cdot\\frac{\\sqrt{a}-\\sqrt{b}}{\\sqrt{a}-\\sqrt{b}}"],
+            "hints": [
+              { "hintId": 0, "hint": "Racionalizar es la técnica que permite eliminar raíces en el numerador y/o denominador en un numero racional." },
+              { "hintId": 1, "hint": "Una forma de eliminar raíces en un sumando es encontrado su conjugado para obtener una suma por diferencia." },
+              { "hintId": 2, "hint": "Amplifica este número racional por 1 usando el conjugado encontrando como numerador y denominador." }
+            ],
+            "matchingError":[
+              {"error":["",""],"hintId":3,"hint": "algo"},
+              {"error":["","*"],"hintId":4,"hint": "algo"},
+              {"error":["*",""],"hintId":5,"hint": "algo"}
+            ],
+            "answers": [
+              { "answer": ["\\frac{1}{\\sqrt{a}+\\sqrt{b}}\\cdot\\frac{\\sqrt{a}-\\sqrt{b}}{\\sqrt{a}-\\sqrt{b}}"], "nextStep": "1" }
+            ],
+            "incorrectMsg": "Revisa que la expresion ingresada este correcta.",
+            "correctMsg": "Has logrado identificar el conjugado y expresar la amplificacion.",
+            "summary": "1)Con el fin de racionalizar el denominador se procede a encontrar su conjugado, luego se multiplica la expresión por una fracción de numerador y denominador respectivamente igual al conjugado encontrado."
+          },
+          {
+            "stepId": "1",
+            "KCs":[{"code":"MF", "label":"multiplicacion de fracciones"},{"code":"ISD", "label":"identificacion de suma por diferencia"}],
+            "expression": "\\frac{1}{\\sqrt{a}+\\sqrt{b}}\\cdot\\frac{\\sqrt{a}-\\sqrt{b}}{\\sqrt{a}-\\sqrt{b}}",
+            "stepTitle": "Multiplica ambas fracciones, recuerda aplicar suma por diferencia en el denominador.",
+            "displayResult": ["\\frac{\\sqrt{a}-\\sqrt{b}}{a-b}"],
+            "hints": [
+              { "hintId": 0, "hint": "Identifica si hay operaciones por realizar entre estos números racionales." },
+              { "hintId": 1, "hint": "La multiplicación de dos números racionales tiene la siguiente forma: \\frac{a}{b}\\cdot\\frac{c}{d}=\\frac{ac}{bd}" },
+              { "hintId": 2, "hint": "El resultado esperado es: \\frac{\\sqrt{a}-\\sqrt{b}}{a-b}" }
+            ],
+            "matchingError":[
+              {"error":["",""],"hintId":3,"hint": "algo"},
+              {"error":["","*"],"hintId":4,"hint": "algo"},
+              {"error":["*",""],"hintId":5,"hint": "algo"}
+            ],
+            "answers": [
+              { "answer": ["\\frac{\\sqrt{a}-\\sqrt{b}}{a-b}"], "nextStep": "-1" }
+            ],
+            "incorrectMsg": "Revisa que la expresion ingresada este correcta.",
+            "correctMsg": "Has logrado racionalizar el denominador correctamente.",
+            "summary": "2)Finalmente se multiplica ambas fracciones eliminando las raíces del denominador luego de identificar la suma por diferencia."
+          }
+        ]
+      }
+]
