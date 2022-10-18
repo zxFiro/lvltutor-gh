@@ -142,10 +142,11 @@ const Plainpotato = () => {
     }
 
     const vali = () => {
-        let a = MQPostfixparser("\\frac{\\left(\\frac{a}{b}+\\frac{c}{d}\\right)}{\\left(\\frac{a}{b}-\\frac{c}{d}\\right)}");
-        MQPostfixSolver(a,[{name:"a",value:1},{name:"b",value:2},{name:"c",value:3},{name:"d",value:4}]);
-        let b = MQPostfixparser("\\frac{a^2+b}{a^2\\cdot b^2}");
+        //let a = MQPostfixparser("\\frac{\\left(\\frac{a}{b}+\\frac{c}{d}\\right)}{\\left(\\frac{a}{b}-\\frac{c}{d}\\right)}");
+        //MQPostfixSolver(a,[{name:"a",value:1},{name:"b",value:2},{name:"c",value:3},{name:"d",value:4}]);
+        let b = MQPostfixparser("\\left(3.5\\right)\\cdot\\left(10^{-4}\\right)\\cdot\\left(5\\right)\\cdot\\left(10^6\\right)\\cdot\\left(4\\right)\\cdot\\left(10^{-4}\\right)");
         MQPostfixSolver(b,[{name:"a",value:1},{name:"b",value:2}]);
+        /*
         console.log("perueba: "+(1^2),precedense["^"],precedense["\\cdot"]);
         let c = MQPostfixparser("\\left(3.5\\right)\\cdot\\left(10^{-4}\\right)\\cdot\\left(5\\right)\\cdot\\left(10^6\\right)\\cdot\\left(4\\right)\\cdot\\left(10^{-4}\\right)");
         MQPostfixSolver(c,[]);
@@ -155,6 +156,7 @@ const Plainpotato = () => {
         MQPostfixSolver(e,[{name:"a",value:1},{name:"b",value:2},{name:"d",value:3}]);
         let f = MQPostfixparser("\\frac{1}{\\sqrt{a}+\\sqrt{b}}\\cdot\\frac{\\sqrt{a}-\\sqrt{b}}{\\sqrt{a}-\\sqrt{b}}");
         MQPostfixSolver(f,[{name:"a",value:1},{name:"b",value:4}]);
+        */
     }
 
     return (

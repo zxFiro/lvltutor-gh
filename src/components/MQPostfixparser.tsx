@@ -65,6 +65,7 @@ const MQPostfixparser = (MQinfixInput:string) => {
             }
             if (number.test(a[i])) {
                 numeric=numeric+a[i];
+                if(i==(l-1)) output=output+" "+numeric;
             } else {
                 if (numeric.length>0){
                     output=output+" "+numeric;
@@ -109,6 +110,7 @@ const MQPostfixparser = (MQinfixInput:string) => {
                     stack.push("prefixmark2");
                 }
             }
+            console.log(a[i],literal, cOp, stack, output);
         }
         while(stack.length>0){
             if("(".localeCompare(stack[stack.length-1])!=0) output=output+" "+stack.pop();

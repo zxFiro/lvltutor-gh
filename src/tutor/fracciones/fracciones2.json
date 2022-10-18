@@ -12,9 +12,10 @@
           {
             "stepId": "0",
             "KCs":[{"code":"MCM", "label":"minimo comun multiplo"}],
-            "expression": "b^{2}, a^{2}b",
+            "expression": "b^{2}, a^{2}\\cdot b",
             "stepTitle": "Encuentra el mínimo común múltiplo entre los siguietnes elementos",
-            "displayResult": ["a^{2}b^{2}"],
+            "displayResult": ["a^{2}\\cdot b^{2}"],
+            "values":[{"name":"a","value":1},{"name":"b","value":2}],
             "hints": [
               { "hintId": 0, "hint": "Para obtener el mínimo común múltiplo puedes comenzar encontrando los factores unicos." },
               { "hintId": 1, "hint": "El mínimo común múltiplo se obtiene multiplicando todos los factores (comunes y no comunes), elevados a la máxima potencia." },
@@ -26,7 +27,7 @@
               {"error":["*",""],"hintId":5,"hint": "algo"}
             ],
             "answers": [
-              { "answer": ["a^2b^2","b^2a^2"], "nextStep": "1" }
+              { "answer": ["a^2\\cdot b^2","b^2a^2"], "nextStep": "1" }
             ],
             "incorrectMsg": "Revisa que la expresion ingresada este correcta.",
             "correctMsg": "Has encontrado el mínimo común múltiplo.",
@@ -35,9 +36,10 @@
           {
             "stepId": "1",
             "KCs":[{"code":"MCM", "label":"minimo comun multiplo"},{"code":"SRFRAC", "label":"suma/resta de fracciones"}],
-            "expression": "\\frac{1}{b^{2}}+\\frac{1}{a^{2}b}",
+            "expression": "\\frac{1}{b^{2}}+\\frac{1}{a^{2}\\cdot b}",
             "stepTitle": "Suma las siguientes fracciones aplicando el mínimo común múltiplo encontrado.",
-            "displayResult": ["\\frac{a^{2}+b}{a^{2}b^{2}}"],
+            "displayResult": ["\\frac{a^{2}+b}{a^{2}\\cdot b^{2}}"],
+            "values":[{"name":"a","value":1},{"name":"b","value":2}],
             "hints": [
               { "hintId": 0, "hint": "Al sumar aplicando mínimo común múltiplo, este se deja como denominador comun." },
               { "hintId": 1, "hint": "Cada elemento del numerador en la fraccion resultante estara compuesto del mínimo común múltiplo multiplicado por el numerador y dividido por el denominador de la fraccion original correspondiente." },
@@ -49,7 +51,7 @@
               {"error":["*",""],"hintId":5,"hint": "algo"}
             ],
             "answers": [
-              { "answer": ["\\frac{a^2+b}{a^2b^2}"], "nextStep": "-1" }
+              { "answer": ["\\frac{a^2+b}{a^2\\cdot b^2}"], "nextStep": "-1" }
             ],
             "incorrectMsg": "Revisa que la expresion ingresada este correcta.",
             "correctMsg": "Has realizado la suma de fracciones aplicando mínimo común múltiplo correctamente.",

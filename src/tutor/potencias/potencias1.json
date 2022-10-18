@@ -8,14 +8,14 @@
         "text": "Escriba las siguientes expresiones en notacion cientifica",
         "selectSteps":false,
         "stepsQuantity":5,
-        "expression": "0,000350\\cdot5000000\\cdot0,0004",
+        "expression": "0.000350\\cdot5000000\\cdot0.0004",
         "steps": [
           {
             "stepId": "0",
             "KCs":[{"code":"NC", "label":"notacion cientifica"}],
-            "expression": "0,000350\\cdot5000000\\cdot0,0004",
+            "expression": "0.000350\\cdot5000000\\cdot0.0004",
             "stepTitle": "Expresa cada factor en su notacion cientifica.",
-            "displayResult": ["\\left(3,5\\right)\\left(10^{-4}\\right)\\left(5\\right)\\left(10^{6}\\right)\\left(5\\right)\\left(10^{-4}\\right)"],
+            "displayResult": ["\\left(3.5\\right)\\cdot\\left(10^{-4}\\right)\\cdot\\left(5\\right)\\cdot\\left(10^{6}\\right)\\cdot\\left(4\\right)\\cdot\\left(10^{-4}\\right)"],
             "hints": [
               { "hintId": 0, "hint": "Trabaja los números de manera individual luego expresa el resultado como su multiplicación." },
               { "hintId": 1, "hint": "Al trabajar un número identifica el primer digito que dejaras como unidad, luego cuenta la cantidad de dígitos del número original hacia la derecha o izquierda de este hasta llegar a la unidad." },
@@ -27,7 +27,7 @@
               {"error":["*",""],"hintId":5,"hint": "algo"}
             ],
             "answers": [
-              { "answer": ["\\left(3,5\\right)\\left(10^{-4}\\right)\\left(5\\right)\\left(10^6\\right)\\left(5\\right)\\left(10^{-4}\\right)"], "nextStep": "1" }
+              { "answer": ["\\left(3.5\\right)\\cdot\\left(10^{-4}\\right)\\cdot\\left(5\\right)\\cdot\\left(10^6\\right)\\cdot\\left(4\\right)\\cdot\\left(10^{-4}\\right)"], "nextStep": "1" }
             ],
             "incorrectMsg": "Revisa que la expresion ingresada este correcta.",
             "correctMsg": "Has expresado cada factor en su notacion cientifica.",
@@ -36,9 +36,9 @@
           {
             "stepId": "1",
             "KCs":[{"code":"MULTD", "label":"multiplicacion de numeros decimales"}],
-            "expression": "\\left(3,5\\right)\\left(10^{-4}\\right)\\left(5\\right)\\left(10^{6}\\right)\\left(5\\right)\\left(10^{-4}\\right)",
+            "expression": "\\left(3.5\\right)\\cdot\\left(10^{-4}\\right)\\cdot\\left(5\\right)\\cdot\\left(10^{6}\\right)\\cdot\\left(4\\right)\\cdot\\left(10^{-4}\\right)",
             "stepTitle": "Identifica los numeros decimales y luego multiplicalos, expresa el numero resultante multiplicando los numeros de misma base.",
-            "displayResult": ["\\left(70\\right)\\left(10^{-4}\\right)\\left(10^{-4}\\right)\\left(10^{6}\\right)"],
+            "displayResult": ["\\left(70\\right)\\cdot\\left(10^{-4}\\right)\\cdot\\left(10^{-4}\\right)\\cdot\\left(10^{6}\\right)"],
             "hints": [
               { "hintId": 0, "hint": "Sin evaluar, agrupa los términos semejantes." },
               { "hintId": 1, "hint": "Con fin de facilitar el cálculo, puedes agrupar los términos semejantes al lado derecho de la expresión." },
@@ -50,7 +50,7 @@
               {"error":["*",""],"hintId":5,"hint": "algo"}
             ],
             "answers": [
-              { "answer": ["\\left(70\\right)\\left(10^{-4}\\right)\\left(10^{-4}\\right)\\left(10^6\\right)"], "nextStep": "2" }
+              { "answer": ["\\left(70\\right)\\cdot\\left(10^{-4}\\right)\\cdot\\left(10^{-4}\\right)\\cdot\\left(10^6\\right)"], "nextStep": "2" }
             ],
             "incorrectMsg": "Revisa que la expresion ingresada este correcta.",
             "correctMsg": "Has realizado las operaciones indicadas correctamente.",
@@ -59,9 +59,9 @@
           {
             "stepId": "2",
             "KCs":[{"code":"SREMB", "label":"suma/resta de exponentes en misma base."}],
-            "expression": "\\left(70\\right)\\left(10^{-4}\\right)\\left(10^{-4}\\right)\\left(10^{6}\\right)",
+            "expression": "\\left(70\\right)\\cdot\\left(10^{-4}\\right)\\cdot\\left(10^{-4}\\right)\\cdot\\left(10^{6}\\right)",
             "stepTitle": "Realiza la suma de las potencias en base 10.",
-            "displayResult": ["\\left(70\\right)\\left(10^{-2}\\right)"],
+            "displayResult": ["\\left(70\\right)\\cdot\\left(10^{-2}\\right)"],
             "hints": [
               { "hintId": 0, "hint": "Multiplica los términos con exponente." },
               { "hintId": 1, "hint": "Aplica la propiedad de suma de potencias en los términos semejantes." },
@@ -73,7 +73,7 @@
               {"error":["*",""],"hintId":5,"hint": "algo"}
             ],
             "answers": [
-              { "answer": ["\\left(70\\right)\\left(10^{-2}\\right)"], "nextStep": "3" }
+              { "answer": ["\\left(70\\right)\\cdot\\left(10^{-2}\\right)"], "nextStep": "3" }
             ],
             "incorrectMsg": "Revisa que la expresion ingresada este correcta.",
             "correctMsg": "Has sumado exponentes en misma base correctamente.",
@@ -82,9 +82,9 @@
           {
             "stepId": "3",
             "KCs":[{"code":"NC", "label":"notacion cientifica"}],
-            "expression": "\\left(70\\right)\\left(10^{-2}\\right)",
+            "expression": "\\left(70\\right)\\cdot\\left(10^{-2}\\right)",
             "stepTitle": "Expresa el numero 70 en su notacion cientifica.",
-            "displayResult": ["\\left(7\\right)\\left(10\\right)\\left(10^{-2}\\right)"],
+            "displayResult": ["\\left(7\\right)\\cdot\\left(10\\right)\\cdot\\left(10^{-2}\\right)"],
             "hints": [
               { "hintId": 0, "hint": "Sin multiplicar, identifica si hay números que se pueden expresar como notación científica. " },
               { "hintId": 1, "hint": "Expresa el numero 70 con su notación científica." },
@@ -96,7 +96,7 @@
               {"error":["*",""],"hintId":5,"hint": "algo"}
             ],
             "answers": [
-              { "answer": ["\\left(7\\right)\\left(10\\right)\\left(10^{-2}\\right)"], "nextStep": "4" }
+              { "answer": ["\\left(7\\right)\\cdot\\left(10\\right)\\cdot\\left(10^{-2}\\right)"], "nextStep": "4" }
             ],
             "incorrectMsg": "Revisa que la expresion ingresada este correcta.",
             "correctMsg": "Has expresado el numero indicado en su notacion cientifica.",
@@ -105,9 +105,9 @@
           {
             "stepId": "4",
             "KCs":[{"code":"SREMB", "label":"suma/resta de exponentes en misma base."}],
-            "expression": "\\left(7\\right)\\left(10\\right)\\left(10^{-2}\\right)",
+            "expression": "\\left(7\\right)\\cdot\\left(10\\right)\\cdot\\left(10^{-2}\\right)",
             "stepTitle": "Realiza la suma de las potencias en base 10.",
-            "displayResult": ["\\left(7\\right)\\left(10^{-1}\\right)"],
+            "displayResult": ["\\left(7\\right)\\cdot\\left(10^{-1}\\right)"],
             "hints": [
               { "hintId": 0, "hint": "Aplica la propiedad de suma de potencias en los números de misma base." },
               { "hintId": 1, "hint": "Sin multiplicar, identifica si hay números que se pueden expresar como notación científica." },
@@ -119,7 +119,7 @@
               {"error":["*",""],"hintId":5,"hint": "algo"}
             ],
             "answers": [
-              { "answer": ["\\left(7\\right)\\left(10^{-1}\\right)"], "nextStep": "-1" }
+              { "answer": ["\\left(7\\right)\\cdot\\left(10^{-1}\\right)"], "nextStep": "-1" }
             ],
             "incorrectMsg": "Revisa que la expresion ingresada este correcta.",
             "correctMsg": "Has logrado expresar la expresion original en su notacion cientifica",
