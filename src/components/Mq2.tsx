@@ -124,7 +124,13 @@ const Mq2 =  ({step,test,setTest,cantidadDePasos,setDefaultIndex,setResumen}) =>
         let parse=MQPostfixparser(exp);
         console.log(parse)
         console.log("fin parser, inicio solver")
-        let answer= MQPostfixSolver(parse);
+        let answer = "";
+        if (step.values != undefined) {
+            console.log("valores: ", step.values)
+            answer= MQPostfixSolver(parse.substring(0),step.values);
+        } else {
+            answer= MQPostfixSolver(parse.substring(0));
+        }
         console.log("fin solver")
         return answer;
     }
