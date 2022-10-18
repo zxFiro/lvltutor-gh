@@ -16,7 +16,7 @@
             "KCs":[{"code":"IMETS", "label":"identificacion de menor exponente en misma base"},{"code":"FFC", "label":"factorizacion por factor comun"}],
             "expression": "\\left(2^{-3}-2^{-5}\\right)^{-2}",
             "stepTitle": "Adentro del paréntesis identifica el factor común y factoriza con su menor exponente.",
-            "displayResult": ["\\left(2^{-5}\\left(2^{2}-1\\right)\\right)^{-2}"],
+            "displayResult": ["\\left(2^{-5}\\cdot\\left(2^{2}-1\\right)\\right)^{-2}"],
             "hints": [
               { "hintId": 0, "hint": "Factoriza los términos semejantes dentro del paréntesis." },
               { "hintId": 1, "hint": "Identifica el termino semejante con el menor exponente y utilízalo para factorizar." },
@@ -28,7 +28,7 @@
               {"error":["*",""],"hintId":5,"hint": "algo"}
             ],
             "answers": [
-              { "answer": ["\\left(2^{-5}\\left(2^2-1\\right)\\right)^{-2}"], "nextStep": "1" }
+              { "answer": ["\\left(2^{-5}\\cdot\\left(2^2-1\\right)\\right)^{-2}"], "nextStep": "1" }
             ],
             "incorrectMsg": "Revisa que la expresion ingresada este correcta.",
             "correctMsg": "Has logrado factorizar y identificar el menor exponente en numeros de misma base.",
@@ -37,9 +37,9 @@
           {
             "stepId": "1",
             "KCs":[{"code":"MP", "label":"multiplicacion de potencias"},{"code":"ENC", "label":"Evaluacion de notacion cientifica"}],
-            "expression": "\\left(2^{-5}\\left(2^{2}-1\\right)\\right)^{-2}",
+            "expression": "\\left(2^{-5}\\cdot\\left(2^{2}-1\\right)\\right)^{-2}",
             "stepTitle": "Resuelve el paréntesis que contiene la resta, luego multiplica los exponentes.",
-            "displayResult": ["2^{10}3^{-2}"],
+            "displayResult": ["2^{10}\\cdot3^{-2}"],
             "hints": [
               { "hintId": 0, "hint": "Identifica si hay operaciones realizables dentro de cada paréntesis sin evaluar exponentes que dificulten el cálculo." },
               { "hintId": 1, "hint": "Aplica la propiedad de multiplicación de potencias en el exponente con mayor dificultad." },
@@ -51,7 +51,7 @@
               {"error":["*",""],"hintId":5,"hint": "algo"}
             ],
             "answers": [
-              { "answer": ["2^{10}3^{-2}"], "nextStep": "2" }
+              { "answer": ["2^{10}\\cdot3^{-2}"], "nextStep": "2" }
             ],
             "incorrectMsg": "Revisa que la expresion ingresada este correcta.",
             "correctMsg": "Has multiplicado potencias correctamente.",
@@ -61,7 +61,7 @@
             "stepId": "2",
             "KCs":[{"code":"ENC", "label":"Evaluacion de notacion cientifica"},{"code":"SRZ", "label":"suma/resta de numeros enteros"},
             {"code":"NOTRAC", "label":"notacion racional"}],
-            "expression": "2^{10}3^{-2}",
+            "expression": "2^{10}\\cdot3^{-2}",
             "stepTitle": "Evalúa la expresión y expresa el resultado como una fracción.",
             "displayResult": ["\\frac{1024}{9}"],
             "hints": [

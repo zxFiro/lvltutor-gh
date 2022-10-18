@@ -16,6 +16,7 @@
             "expression": "\\frac{1}{\\sqrt{a}+\\sqrt{b}}",
             "stepTitle": "Identifica el conjugado del denominador, luego deja expresado la racionalización del denominador.",
             "displayResult": ["\\frac{1}{\\sqrt{a}+\\sqrt{b}}\\cdot\\frac{\\sqrt{a}-\\sqrt{b}}{\\sqrt{a}-\\sqrt{b}}"],
+            "values":[{"name":"a","value":1},{"name":"b","value":4}],
             "hints": [
               { "hintId": 0, "hint": "Racionalizar es la técnica que permite eliminar raíces en el numerador y/o denominador en un numero racional." },
               { "hintId": 1, "hint": "Una forma de eliminar raíces en un sumando es encontrado su conjugado para obtener una suma por diferencia." },
@@ -39,6 +40,7 @@
             "expression": "\\frac{1}{\\sqrt{a}+\\sqrt{b}}\\cdot\\frac{\\sqrt{a}-\\sqrt{b}}{\\sqrt{a}-\\sqrt{b}}",
             "stepTitle": "Multiplica ambas fracciones, recuerda aplicar suma por diferencia en el denominador.",
             "displayResult": ["\\frac{\\sqrt{a}-\\sqrt{b}}{a-b}"],
+            "values":[{"name":"a","value":1},{"name":"b","value":4}],
             "hints": [
               { "hintId": 0, "hint": "Identifica si hay operaciones por realizar entre estos números racionales." },
               { "hintId": 1, "hint": "La multiplicación de dos números racionales tiene la siguiente forma: \\frac{a}{b}\\cdot\\frac{c}{d}=\\frac{ac}{bd}" },

@@ -16,6 +16,7 @@
             "expression": "\\frac{\\left(a^{b+3}\\cdot{d}^{b+2}\\right)^{3}}{a^{3\\cdot b}\\cdot{d}^{6}}",
             "stepTitle": "En el numerador realiza la multiplicación de potencias.",
             "displayResult": ["\\frac{a^{3\\cdot b+9}\\cdot{d}^{3\\cdot b+6}}{a^{3\\cdot b}\\cdot{d}^{6}}"],
+            "values":[{"name":"a","value":1},{"name":"b","value":2},{"name":"d","value":3}],
             "hints": [
               { "hintId": 0, "hint": "La multiplicación de potencias tiene forma: (a^{n})^{m}=a^{n\\cdot{m}}" },
               { "hintId": 1, "hint": "Cuando la operación de los términos dentro de un paréntesis es la multiplicación se puede aplicar la siguiente propiedad: (a\\cdot{b})^{n}=a^{n}b^{n}" },
@@ -39,6 +40,7 @@
             "expression": "\\frac{a^{3\\cdot b+9}\\cdot{d}^{3\\cdot b+6}}{a^{3\\cdot b}\\cdot{d}^{6}}",
             "stepTitle": "Invierte los factores en el denominador.",
             "displayResult": ["a^{3\\cdot b+9}\\cdot{d}^{3\\cdot b+6}\\cdot{a}^{-3\\cdot b}\\cdot{d}^{-6}"],
+            "values":[{"name":"a","value":1},{"name":"b","value":2},{"name":"d","value":3}],
             "hints": [
               { "hintId": 0, "hint": "Puedes obtener el inverso de una expresión elevando por la potencia -1." },
               { "hintId": 1, "hint": "Recuerda que después de obtener el inverso realiza la multiplicación de potencias correspondiente." },
@@ -62,6 +64,7 @@
             "expression": "a^{3\\cdot b+9}\\cdot{d}^{3\\cdot b+6}\\cdot{a}^{-3\\cdot b}\\cdot{d}^{-6}",
             "stepTitle": "Realiza la suma/resta de potencias en cada factor de igual base.",
             "displayResult": ["a^{9}\\cdot{d}^{3\\cdot b}"],
+            "values":[{"name":"a","value":1},{"name":"b","value":2},{"name":"d","value":3}],
             "hints": [
               { "hintId": 0, "hint": "Identifican si hay operaciones por realizar en cada exponente." },
               { "hintId": 1, "hint": "Las operaciones de multiplicación/división/suma/resta dentro de un exponente se pueden realizar como si fuese una expresión normal." },
